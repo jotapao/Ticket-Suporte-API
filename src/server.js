@@ -1,8 +1,12 @@
 import http from "node:http";
 
 import { jsonHandler } from "./middlewares/jsonHandler.js";
+import { routeHandler } from "./middlewares/routehandler.js";
 
-async function listener(request, response) {}
+async function listener(request, response) {
+  await jsonHandler(request, response);
+  routeHandler(request, response);
+}
 
 function listener(request, response) {
   //funcção
