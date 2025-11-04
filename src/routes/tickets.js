@@ -1,4 +1,4 @@
-import { create } from "../../controllers/tickets/create.js";
+import { create } from "../controllers/tickets/create.js";
 
 export const tickets = [
   {
